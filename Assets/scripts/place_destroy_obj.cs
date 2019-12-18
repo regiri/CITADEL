@@ -10,6 +10,6 @@ public class place_destroy_obj : MonoBehaviour{
     }
     // Update is called once per frame
     void Update(){
-        if()
+        
     }
 }
