@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - onGrid
+=======
+  - hero
+>>>>>>> d843fdc7f6c31c590d6cda16be34ab7f101b2202
   layers:
   - Default
   - TransparentFX
