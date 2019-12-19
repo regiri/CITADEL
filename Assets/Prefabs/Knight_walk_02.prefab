@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 304645323549652928}
   - component: {fileID: 304645323549652991}
-  - component: {fileID: 304645323549652990}
   - component: {fileID: 304645323549652929}
+  - component: {fileID: 304645323549652990}
+  - component: {fileID: 114476709804400758}
   - component: {fileID: 304645323549652988}
   m_Layer: 0
   m_Name: Knight_walk_02
@@ -82,19 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &304645323549652990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304645323549652931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0f7eca9d39c9f44a372b30827c5826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!61 &304645323549652929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,6 +109,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 1.4}
   m_EdgeRadius: 0
+--- !u!114 &304645323549652990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304645323549652931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0f7eca9d39c9f44a372b30827c5826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!114 &114476709804400758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304645323549652931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d74f0e5e70aa9b4fb4c9cdb5c4540d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placing_obj: {fileID: 9166656246651068422, guid: 29032a64382f9e24f98b4001c8714769,
+    type: 3}
 --- !u!50 &304645323549652988
 Rigidbody2D:
   serializedVersion: 4
