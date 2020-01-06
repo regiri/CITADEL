@@ -4,11 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - onGrid
-=======
-  - hero
->>>>>>> d843fdc7f6c31c590d6cda16be34ab7f101b2202
+  - canMove
   layers:
   - Default
   - TransparentFX
@@ -34,8 +31,8 @@ TagManager:
   - 
   - 
   - 
-  - main
-  - backgrownd
+  - 
+  - 
   - 
   - 
   - 
@@ -46,9 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: main
-    uniqueID: 1588558185
-    locked: 0
-  - name: backgrownd
-    uniqueID: 1564815195
+  - name: Player
+    uniqueID: 3511070797
     locked: 0

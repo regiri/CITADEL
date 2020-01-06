@@ -8,12 +8,12 @@ public class mouse_follow : MonoBehaviour{
     private Camera cam;//камера
     public bool flag = true;//переменная, отвечающая за наличие пустышки в объекте
     private void OnTriggerEnter2D(Collider2D col) {//если пересекается коллизией с чем-то
-        if (col.gameObject.tag == "onGrid") {//если у этого чего-то тэг "onGrid"
+        if (col.gameObject.tag == "canMove") {//если у этого чего-то тэг "onGrid"
             print("collision!");//вспомогательная вещь, не трожь
             flag = false;//пустышка в объекте => ставить сюда объект нельзя
         }
     }
-    private void OnTriggerExit2D(Collider2D col) {//если пустышкаа не заходит коллизией
+    private void OnTriggerExit2D(Collider2D col) {//если пустышка не заходит коллизией
         print("exit");//не трогай свечу!
         flag = true;//пустышка не пересекает объект => ставить можно. ура!
     }
@@ -25,8 +25,6 @@ public class mouse_follow : MonoBehaviour{
     void Update(){
         /*перевод глобальных координат мыши в локальные координаты камеры*/
         mouse_position = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
-        mouse_position.x = Mathf.Round(mouse_position.x);//округление координат для создания сетки
-        mouse_position.y = Mathf.Round(mouse_position.y);//на сетку мы будем ставить и убирать объекты
         theFollowing.transform.position = mouse_position;//передвижение пустышки
     }
 }
