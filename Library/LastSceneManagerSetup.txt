@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ConsoleScene.unity
+- path: Assets/Scenes/building_obj.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
