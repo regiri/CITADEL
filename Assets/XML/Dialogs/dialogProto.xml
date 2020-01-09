@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog>
+         <person>
+                 <name>Hero</name>
+                 <image>hero</image>
+                 <phrase>Hello, u!!!</phrase>
+         </person>
+         <person>
+                 <name>NPC</name>
+                 <image>npc</image>
+                 <phrase>no, u</phrase>
+         </person>
+</dialog>
+

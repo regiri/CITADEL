@@ -9,12 +9,12 @@ public class mouse_follow : MonoBehaviour{
     public bool flag = true;//переменная, отвечающая за наличие пустышки в объекте
     private void OnTriggerEnter2D(Collider2D col) {//если пересекается коллизией с чем-то
         if (col.gameObject.tag == "canMove") {//если у этого чего-то тэг "onGrid"
-            print("collision!");//вспомогательная вещь, не трожь
+            //print("collision!");//вспомогательная вещь, не трожь
             flag = false;//пустышка в объекте => ставить сюда объект нельзя
         }
     }
     private void OnTriggerExit2D(Collider2D col) {//если пустышка не заходит коллизией
-        print("exit");//не трогай свечу!
+        //print("exit");//не трогай свечу!
         flag = true;//пустышка не пересекает объект => ставить можно. ура!
     }
     // Start is called before the first frame update
