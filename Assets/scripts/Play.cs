@@ -1,22 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Play : MonoBehaviour
-{
+public class Play : MonoBehaviour {
     public void BAMSPressed()
     {
-        SceneManager.LoadScene("building_obj");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void CSPressed()
     {
-        SceneManager.LoadScene("building_obj");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void JavaPressed()
     {
-        SceneManager.LoadScene("building_obj");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
