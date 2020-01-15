@@ -1,6 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+<<<<<<< HEAD
+=======
+    - ConsoleScript
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
     - Database
     - Holding_object
     - Inventory
@@ -43,11 +47,69 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+<<<<<<< HEAD
+=======
+    - UnityEngine.UI.InputField
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
     - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
+<<<<<<< HEAD
+=======
+    Assets/Scenes/CodeScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11194}
+    - Class: 114
+      Script: {instanceID: 11420}
+    - Class: 114
+      Script: {instanceID: 11470}
+    - Class: 114
+      Script: {instanceID: 11990}
+    - Class: 114
+      Script: {instanceID: 12518}
+    - Class: 114
+      Script: {instanceID: 12750}
+    - Class: 114
+      Script: {instanceID: 13138}
+    - Class: 114
+      Script: {instanceID: 13624}
+    - Class: 114
+      Script: {instanceID: 15216}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
     Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -277,12 +339,15 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InputScript
   - hash:
       serializedVersion: 2
+=======
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -823,24 +888,30 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraSizeControlScript
   - hash:
       serializedVersion: 2
+=======
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ResizeScript
   - hash:
       serializedVersion: 2
+=======
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
       Hash: 27e5341178f188b89bdc6495710b590c
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1085,8 +1156,22 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+<<<<<<< HEAD
+=======
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConsoleScript
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/building_obj.unity
+<<<<<<< HEAD
   playerPath: C:/Users/Sirius/Desktop/CITADEL/game0_0.exe
+=======
+  - Assets/Scenes/CodeScene.unity
+  playerPath: "C:/Users/\u0415\u0432\u0433\u0435\u043D\u0438\u044F/UnityProjects/citadel/game0_0.exe"
+>>>>>>> e06604d3e5d91c52195668e4c942d3ed6ea22b7f
