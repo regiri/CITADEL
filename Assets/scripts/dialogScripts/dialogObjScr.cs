@@ -82,7 +82,7 @@ public class dialogObjScr : MonoBehaviour
     //окончание диалога
     void EndDialog()
     {
-        FindObjectOfType<playDialog>().EndDialog();
+        FindObjectOfType<dialogAndQuest>().EndDialog();
         transform.DOLocalMoveY(-615, 1);         //смещаем блок диалога обратно
     }
 }
