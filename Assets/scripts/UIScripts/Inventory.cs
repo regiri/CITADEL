@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+//каждый раз когда я не буду понимать что здесь происходит я буду добавлять сюда 1
+//текущий счётчик заёбанности: 2
 public class Inventory : MonoBehaviour
 {
     public Database data;
@@ -16,21 +18,20 @@ public class Inventory : MonoBehaviour
 
     public Camera cam;
     public EventSystem es;
-
+    public int trig;
     public int currentID;
     public ItemInventory currentItem;
     public RectTransform movingObject;
     public Vector3 offset;
-
     //public GameObject backGrownd;
     public void Start() {
         if (items.Count == 0) {
             AddGraphics();
         }
-
-        for (int i = 0; i < maxCount; i++) { //тест, рандомное заполнение
-            AddItem(i, data.items[Random.Range(0, data.items.Count)], Random.Range(1, 99));
-        }
+        /*for (int i = 0; i < maxCount; i++) { //тест, рандомное заполнение
+            int x = Random.Range(0, data.items.Count);
+            AddItem(i, data.items[x], Random.Range(1, data.items[x].stuck));
+        }*/
         UpdateInventory();
     }
 
@@ -38,7 +39,15 @@ public class Inventory : MonoBehaviour
         if (currentID != -1) {
             MoveObject();
         }
-
+        trig = GameObject.Find("helper").GetComponent<mouse_follow>().flag;
+        for (int i = 0; i < maxCount; i++) {
+            if (items[i].id == 0) {
+                if (trig == 2 && Input.GetMouseButtonDown(1)) {
+                    AddItem(trig, data.items[trig], 1);
+                }
+            }
+        }
+        UpdateInventory();
         /*if (Input.GetKeyDown(KeyCode.I)) {
             backGrownd.SetActive(!backGrownd.activeSelf);
             if (backGrownd.activeSelf) {
@@ -50,11 +59,11 @@ public class Inventory : MonoBehaviour
     public void SearchForSameItem(Item item, int count) {
         for (int i = 0; i < maxCount; i++) {
             if (items[i].id == item.id) {
-                if (items[i].count < 128) {
+                if (items[i].count < item.stuck) {
                     items[i].count += count;
-                    if (items[i].count > 128) {
-                        count = items[i].count - 128;
-                        items[i].count = 64;
+                    if (items[i].count > item.stuck) {
+                        count = items[i].count - item.stuck;
+                        items[i].count = item.stuck / 2;
                     }
                     else {
                         count = 0;
@@ -73,6 +82,7 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
     public void AddItem(int id, Item item, int count) {
         items[id].id = item.id;
         items[id].count = count;
@@ -85,6 +95,7 @@ public class Inventory : MonoBehaviour
             items[id].itemGameObj.GetComponentInChildren<Text>().text = "";
         }
     }
+
     public void AddInventoryItem(int id, ItemInventory invItem) {
         items[id].id = invItem.id;
         items[id].count = invItem.count;
@@ -140,7 +151,7 @@ public class Inventory : MonoBehaviour
             currentItem = CopyInventoryItem(items[currentID]);
             movingObject.gameObject.SetActive(true);
             movingObject.GetComponent<Image>().sprite = data.items[currentItem.id].img;
-
+            currentItem.stuck = data.items[currentItem.id].stuck;
             AddItem(currentID, data.items[0], 0); 
         }
         else {
@@ -150,12 +161,12 @@ public class Inventory : MonoBehaviour
                 AddInventoryItem(int.Parse(es.currentSelectedGameObject.name), currentItem); 
             }
             else {
-                if(II.count + currentItem.count <= 128) {
+                if(II.count + currentItem.count <= currentItem.stuck) {
                     II.count += currentItem.count;
                 }
                 else {
-                    AddItem(currentID, data.items[II.id], II.count + currentItem.count - 128);
-                    II.count = 128;
+                    AddItem(currentID, data.items[II.id], II.count + currentItem.count - currentItem.stuck);
+                    II.count = currentItem.stuck;
                 }
                 II.itemGameObj.GetComponentInChildren<Text>().text = II.count.ToString();
             }
@@ -189,4 +200,5 @@ public class ItemInventory
     public int id;
     public GameObject itemGameObj;
     public int count;
+    public int stuck;
 }

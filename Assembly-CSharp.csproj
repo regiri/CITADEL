@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{4DC24671-CD7F-56F9-42F7-879E5409773D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -104,12 +103,19 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\scripts\CameraSizeControlScript.cs" />
     <Compile Include="Assets\scripts\ConsoleScript.cs" />
     <Compile Include="Assets\scripts\Holding_object.cs" />
+    <Compile Include="Assets\scripts\InputScript.cs" />
     <Compile Include="Assets\scripts\MenuControls.cs" />
     <Compile Include="Assets\scripts\Play.cs" />
+    <Compile Include="Assets\scripts\ResizeScript.cs" />
     <Compile Include="Assets\scripts\UIScripts\Database.cs" />
     <Compile Include="Assets\scripts\UIScripts\Inventory.cs" />
+    <Compile Include="Assets\scripts\UIScripts\MenuControls.cs" />
+    <Compile Include="Assets\scripts\UIScripts\Play.cs" />
+    <Compile Include="Assets\scripts\UIScripts\camerafollow.cs" />
+    <Compile Include="Assets\scripts\UIScripts\mouse_follow.cs" />
     <Compile Include="Assets\scripts\UIScripts\progressCheckScript.cs" />
     <Compile Include="Assets\scripts\XMLScripts\XMLReader.cs" />
     <Compile Include="Assets\scripts\camerafollow.cs" />
@@ -117,9 +123,12 @@
     <Compile Include="Assets\scripts\dialogScripts\dialogObjScr.cs" />
     <Compile Include="Assets\scripts\dialogScripts\playDialog.cs" />
     <Compile Include="Assets\scripts\heromove.cs" />
+    <Compile Include="Assets\scripts\mapScripts\heromove.cs" />
     <Compile Include="Assets\scripts\mapScripts\mapCloseScript.cs" />
     <Compile Include="Assets\scripts\mapScripts\mapOpenScript.cs" />
     <Compile Include="Assets\scripts\mouse_follow.cs" />
+    <Compile Include="Assets\scripts\openConsole.cs" />
+    <Compile Include="Assets\scripts\questScripts\ConsoleScript.cs" />
     <Compile Include="Assets\scripts\questScripts\questObj.cs" />
     <Compile Include="Assets\scripts\questScripts\questObjScr.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -139,6 +148,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\read me.txt" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -147,61 +157,61 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -381,16 +391,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Sirius/Desktop/удаленные скрипты/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
