@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using WindowsInput;
 
 public class ConsoleScript : MonoBehaviour
 {
     private InputField input;
     private SpriteRenderer screenRed, screenGreen;
     private Button butNext, butOK, butExitR, butExitG;
+    private InputSimulator inputSimulator = new InputSimulator();
+    private Canvas canvas;
     //всё далее должно храниться в xml
     private string error = "\n\nFatal error code DI35: encoding error.\nCannot read inner code files: unknown symbol ‘?’.";
     private string codeTask = @"# Python 3.7
@@ -137,9 +140,6 @@ if __name__ == '__main__':
     main()";
     private string[] answer;
 
-    Vector2 _scrollPosition = Vector2.zero;
-    Vector2 _lastMousePos = new Vector2(-999f, -999f);
-
     void Start()
     {
         InitAll();
@@ -148,29 +148,30 @@ if __name__ == '__main__':
         input.text = error;
     }
 
-    private void OnGUI()
+    private void Update()
     {
-        Rect scrollViewRect = new Rect(0, 0, 650, 400);
-
-        // Scroll view
-        _scrollPosition = GUI.BeginScrollView(scrollViewRect, _scrollPosition, new Rect(0, 0, 650, 400));
-        /* Your code here */
-        GUI.EndScrollView();
- 
-        if (Input.mouseScrollDelta.x != 0)
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (scroll > 0.0f && input.isFocused)
         {
-            _scrollPosition += -Event.current.delta;
-            Event.current.Use();
+            heromove.is_moving = false;
+            inputSimulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.UP);
+        }
+        else if (scroll < 0.0f && input.isFocused)
+        {
+            heromove.is_moving = false;
+            inputSimulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.DOWN);
         }
     }
 
     void InitAll()
     {
+        canvas = GetComponent<Canvas>();
+        canvas.gameObject.SetActive(false);
         input = GetComponentInChildren<InputField>();
         SpriteRenderer[] screens = GetComponentsInChildren<SpriteRenderer>();
         foreach(var scr in screens)
         {
-            if (scr.gameObject.name == "screenRed")
+            if (scr.gameObject.name == "ScreenRed")
                 screenRed = scr;
             else
                 screenGreen = scr;
@@ -179,16 +180,16 @@ if __name__ == '__main__':
         Button[] buttons = GetComponentsInChildren<Button>();
         foreach(var b in buttons)
         {
-            if (b.gameObject.name == "butNext")
+            if (b.gameObject.name == "ButNext")
                 butNext = b;
-            if (b.gameObject.name == "butExitR")
+            if (b.gameObject.name == "ButExitR")
                 butExitR = b;
-            if (b.gameObject.name == "butOK")
+            if (b.gameObject.name == "ButOK")
             {
                 butOK = b;
                 butOK.gameObject.SetActive(false);
             }
-            if (b.gameObject.name == "butExitG")
+            if (b.gameObject.name == "ButExitG")
             {
                 butExitG = b;
                 butExitG.gameObject.SetActive(false);
@@ -208,11 +209,13 @@ if __name__ == '__main__':
         if (score < 0)
             score = 0;
         print(score);
+        ExitConsole();
     }
 
-    public void ExitConsole(string sceneName)
+    public void ExitConsole()
     {
-        SceneManager.LoadScene(sceneName);
+        canvas.gameObject.SetActive(false);
+        heromove.is_moving = true;
     }
 
     public void ChangeScreene()
