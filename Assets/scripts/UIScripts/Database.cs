@@ -13,4 +13,5 @@ public class Item
     public int id;
     public string name;
     public Sprite img;
+    public int stuck;
 }
