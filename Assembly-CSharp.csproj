@@ -111,6 +111,7 @@
     <Compile Include="Assets\scripts\ResizeScript.cs" />
     <Compile Include="Assets\scripts\UIScripts\Database.cs" />
     <Compile Include="Assets\scripts\UIScripts\Inventory.cs" />
+    <Compile Include="Assets\scripts\UIScripts\progressCheckScript.cs" />
     <Compile Include="Assets\scripts\XMLScripts\XMLReader.cs" />
     <Compile Include="Assets\scripts\camerafollow.cs" />
     <Compile Include="Assets\scripts\dialogScripts\dialogObj.cs" />
@@ -139,7 +140,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\read me.txt" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
