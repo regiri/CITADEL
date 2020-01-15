@@ -21,8 +21,5 @@ public class Quest
 
 public class questObj : MonoBehaviour
 { 
-    void Start()
-    {
-        
-    }
+    
 }

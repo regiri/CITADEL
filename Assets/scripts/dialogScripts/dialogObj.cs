@@ -39,8 +39,7 @@ public class Dialog
 
 public class dialogObj : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+
 }
+
+

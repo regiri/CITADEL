@@ -21,6 +21,10 @@ public class heromove : MonoBehaviour{
             move_h = Input.GetAxis("Horizontal"); //скорость по горизонтальной оси
             move_v = Input.GetAxis("Vertical"); //скорость по вертикальной оси
             rig.velocity = new Vector2(move_h * speed, move_v * speed); //задаём Rigidbody скорость вектором по осям OX и OY
+<<<<<<< HEAD
+=======
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+>>>>>>> 3eca2d77c50576be206f84248e78083dc6c2f363
             if (move_v > 0) {
                 sprite.sprite = heroes[1];
             }

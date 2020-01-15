@@ -1483,6 +1483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3e33b0a4bb61b4190585401ed019f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   data: {fileID: 519420033}
   items: []
   gameObjShow: {fileID: 167757644}
@@ -1490,6 +1491,15 @@ MonoBehaviour:
   maxCount: 0
   cam: {fileID: 519420031}
   es: {fileID: 2034053806}
+=======
+  data: {fileID: 0}
+  items: []
+  gameObjShow: {fileID: 0}
+  InventoryMainObject: {fileID: 0}
+  maxCount: 0
+  cam: {fileID: 0}
+  es: {fileID: 0}
+>>>>>>> 3eca2d77c50576be206f84248e78083dc6c2f363
   trig: 0
   currentID: 0
   currentItem:

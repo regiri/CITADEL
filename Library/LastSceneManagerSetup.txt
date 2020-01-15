@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: C:/Users/Sirius/Desktop/CITADEL/CITADEL/Assets/Scenes/GameScene.unity
+=======
+- path: Assets/Scenes/GameScene.unity
+>>>>>>> 3eca2d77c50576be206f84248e78083dc6c2f363
   isLoaded: 1
   isActive: 1
   isSubScene: 0
