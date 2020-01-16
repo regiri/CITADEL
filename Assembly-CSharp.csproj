@@ -391,6 +391,9 @@
     <Reference Include="DOTween">
       <HintPath>C:/Users/Евгения/UnityProjects/citadel/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsInput">
+      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Assets/scripts/consoleScripts/WindowsInput.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -399,9 +402,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="WindowsInput">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Assets/scripts/consoleScripts/WindowsInput.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

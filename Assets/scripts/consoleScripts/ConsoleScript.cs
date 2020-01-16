@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using WindowsInput;
 
@@ -10,6 +10,9 @@ public class ConsoleScript : MonoBehaviour
     private Button butNext, butOK, butExitR, butExitG;
     private InputSimulator inputSimulator = new InputSimulator();
     private Canvas canvas;
+    private GameObject hero;
+    private int attempts = 0;
+    public int score = 14;
     //всё далее должно храниться в xml
     private string error = "\n\nFatal error code DI35: encoding error.\nCannot read inner code files: unknown symbol ‘?’.";
     private string codeTask = @"# Python 3.7
@@ -153,18 +156,17 @@ if __name__ == '__main__':
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0.0f && input.isFocused)
         {
-            heromove.is_moving = false;
             inputSimulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.UP);
         }
         else if (scroll < 0.0f && input.isFocused)
         {
-            heromove.is_moving = false;
-            inputSimulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.DOWN);
+            inputSimulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.DOWN); 
         }
     }
 
     void InitAll()
     {
+        hero = GameObject.FindGameObjectWithTag("Player");
         canvas = GetComponent<Canvas>();
         canvas.gameObject.SetActive(false);
         input = GetComponentInChildren<InputField>();
@@ -199,12 +201,19 @@ if __name__ == '__main__':
 
     public void CalculateScore()
     {
-        int score = 14;
-        string[] a = input.text.Split('\n');
-        for (int i = 0; i < a.Length; i++)
+        attempts += 1;
+        string[] playerAnswer = Clean(input.text.Split('\n'));
+        answer = Clean(answer);
+        for (int i = 0; i < playerAnswer.Length; i++)
         {
-            if (!(a[i] == answer[i]))
+            try
+            {
+                if (!(playerAnswer[i] == answer[i]))
+                    score--;
+            } catch 
+            {
                 score--;
+            }
         }
         if (score < 0)
             score = 0;
@@ -212,11 +221,24 @@ if __name__ == '__main__':
         ExitConsole();
     }
 
+    private string[] Clean(string[] array)
+    {
+        string res = "";
+        foreach(var i in array)
+        {
+            if (!i.Equals(""))
+                res += i + "\n";
+        }
+        return res.Split('\n');
+    }
+
     public void ExitConsole()
     {
         canvas.gameObject.SetActive(false);
-        heromove.is_moving = true;
+        Input.ResetInputAxes();
+        hero.SetActive(true);
     }
+
 
     public void ChangeScreene()
     {
@@ -228,5 +250,6 @@ if __name__ == '__main__':
         butOK.gameObject.SetActive(true);
         screenGreen.enabled = true;
         screenRed.enabled = false;
+        hero.SetActive(false);
     }
 }
