@@ -103,11 +103,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\scripts\CameraSizeControlScript.cs" />
     <Compile Include="Assets\scripts\EscapeMenuOpen.cs" />
     <Compile Include="Assets\scripts\Holding_object.cs" />
-    <Compile Include="Assets\scripts\InputScript.cs" />
-    <Compile Include="Assets\scripts\ResizeScript.cs" />
     <Compile Include="Assets\scripts\UIScripts\Database.cs" />
     <Compile Include="Assets\scripts\UIScripts\Inventory.cs" />
     <Compile Include="Assets\scripts\UIScripts\MenuControls.cs" />
@@ -150,7 +147,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\read me.txt" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />

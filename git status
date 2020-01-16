@@ -1,0 +1,151 @@
+[33mcommit d63411603044942d84fa152fb78b9235901c7aa2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 74e5b4f9 da94751b
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 16:38:47 2020 +0300
+
+    hvatit3
+
+[33mcommit 74e5b4f90f8497374e200528c8994bb2e185a51c[m
+Merge: 0cbb204c 3eca2d77
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 16:36:16 2020 +0300
+
+    hvatit2
+
+[33mcommit da94751bcfd83bd4a41622824bf1bba9ba8dddbe[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Eugeniya <zem.jane@mail.ru>
+Date:   Wed Jan 15 18:35:57 2020 +0500
+
+    console integration
+
+[33mcommit 0cbb204c8d6432c734d5fb96474fafaeff30cd8e[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 16:35:22 2020 +0300
+
+    hvatit
+
+[33mcommit 3eca2d77c50576be206f84248e78083dc6c2f363[m
+Merge: 4c6ec1ff 7adf5b88
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 15:39:40 2020 +0300
+
+    Merge branch 'master' of https://github.com/regiri/CITADEL
+
+[33mcommit 4c6ec1ffa48f3ddcc7251b72f24bd3bdf286cd89[m
+Merge: ff420ccc e15084fc
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 15:36:49 2020 +0300
+
+    merge
+
+[33mcommit 7adf5b88ce92c6dad040f302cffbdfb3517787f0[m
+Author: SedanIV <58529875+SedanIV@users.noreply.github.com>
+Date:   Wed Jan 15 15:33:31 2020 +0300
+
+    Add files via upload
+
+[33mcommit ff420ccc4b48a5db71ff37c7f18f9fef42f365e8[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 15:28:13 2020 +0300
+
+    merge
+
+[33mcommit e15084fcd000659f36c94f5ad2a9e016a8185c41[m
+Author: Egor <khramovegor@gmail.com>
+Date:   Wed Jan 15 14:57:10 2020 +0300
+
+    Added map
+
+[33mcommit 77683e03145cb7d9caf554650634eeadcb63ee54[m
+Merge: 99bba5c2 e06604d3
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 10:16:05 2020 +0300
+
+    fuck this
+
+[33mcommit 99bba5c2830197e5eccf63c2684f6416f059c2d4[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 15 10:14:33 2020 +0300
+
+    another merge
+
+[33mcommit e06604d3e5d91c52195668e4c942d3ed6ea22b7f[m
+Author: Eugeniya <zem.jane@mail.ru>
+Date:   Mon Jan 13 19:00:50 2020 +0500
+
+    console add
+
+[33mcommit 578a94d342ff653558e74171b264338135a98561[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Sun Jan 12 16:14:54 2020 +0300
+
+    fixed gm
+
+[33mcommit 1b8c09e05b3e9b9aef1e706c0d95c63e3d8c9c82[m
+Author: SedanIV <58529875+SedanIV@users.noreply.github.com>
+Date:   Sun Jan 12 12:12:41 2020 +0300
+
+    Add files via upload
+
+[33mcommit 20cfaeea0a2fc0b6fffe55e4a8320ce00b08f280[m
+Author: SedanIV <58529875+SedanIV@users.noreply.github.com>
+Date:   Sun Jan 12 12:06:42 2020 +0300
+
+    Add files via upload
+
+[33mcommit e230e5c547f3ca11b6a064a270efbedf9cfca2e9[m
+Author: Egor <khramovegor@gmail.com>
+Date:   Thu Jan 9 14:49:35 2020 +0300
+
+    Added quests and dialogs
+
+[33mcommit 97b98fef1843e0f4fbc9624f2f990517eb68d8a3[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Wed Jan 8 16:45:27 2020 +0300
+
+    merge building and qwest
+
+[33mcommit 0bf0ac163bdcf2de07e55e6562e7ca23c1b08997[m
+Author: Eugeniya <zem.jane@mail.ru>
+Date:   Wed Jan 8 18:19:13 2020 +0500
+
+    quest#2 + code cleaning
+
+[33mcommit 2f0c8a7f28dfca1461e288ce5793db951dbd3310[m
+Author: Eugeniya <zem.jane@mail.ru>
+Date:   Mon Jan 6 19:19:12 2020 +0500
+
+    basic quests mechanics
+
+[33mcommit 714b0fbef7d36d12457cfffc8543d4da0f652a41[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Mon Jan 6 15:52:02 2020 +0300
+
+    holding
+
+[33mcommit 88ea3c8e0012d22f824ad8d9856e8f29e09b0866[m
+Merge: 69e73541 d843fdc7
+Author: regiri <goparegiri@gmail.com>
+Date:   Thu Dec 19 20:22:45 2019 +0500
+
+    place_destroy
+
+[33mcommit 69e73541ae0daf9a88261dbdf87afdfe000cb595[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Thu Dec 19 20:03:35 2019 +0500
+
+    dobavil ustanovku i udalenie
+
+[33mcommit d843fdc7f6c31c590d6cda16be34ab7f101b2202[m[33m ([m[1;31morigin/dialogs[m[33m)[m
+Author: Egor <khramovegor@gmail.com>
+Date:   Wed Dec 18 20:20:06 2019 +0300
+
+    added dialogs
+    
+    danila, ty 4to crazy?
+
+[33mcommit fde8c972cf8d9344ed5d12e59c5487508f747bae[m
+Author: regiri <goparegiri@gmail.com>
+Date:   Thu Dec 5 20:39:24 2019 +0500
+
+    dopustim

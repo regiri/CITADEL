@@ -1285,7 +1285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &286338604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1878,49 +1878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441477966f23faf4ea9d63cdd555db0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  items: []
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f3e33b0a4bb61b4190585401ed019f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  data: {fileID: 519420033}
-  items: []
-  gameObjShow: {fileID: 167757644}
-  InventoryMainObject: {fileID: 167757644}
-  maxCount: 0
-  cam: {fileID: 519420031}
-  es: {fileID: 2034053806}
-=======
-  data: {fileID: 0}
-  items: []
-  gameObjShow: {fileID: 0}
-  InventoryMainObject: {fileID: 0}
-  maxCount: 0
-  cam: {fileID: 0}
-  es: {fileID: 0}
->>>>>>> 3eca2d77c50576be206f84248e78083dc6c2f363
-  trig: 0
-  currentID: 0
-  currentItem:
-    id: 0
-    itemGameObj: {fileID: 0}
-    count: 0
-    stuck: 0
-  movingObject: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   canavs: {fileID: 286338603}
->>>>>>> da94751bcfd83bd4a41622824bf1bba9ba8dddbe
 --- !u!1 &536149012
 GameObject:
   m_ObjectHideFlags: 0
