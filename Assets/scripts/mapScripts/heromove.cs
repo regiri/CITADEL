@@ -11,6 +11,8 @@ public class heromove : MonoBehaviour{
     SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start() {
+        is_moving = true;
+        Input.ResetInputAxes();
         rig = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
