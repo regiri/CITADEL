@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 //каждый раз когда я не буду понимать что здесь происходит я буду добавлять сюда 1
-//текущий счётчик заёбанности: 2
+//текущий счётчик заёбанности: 4
 public class Inventory : MonoBehaviour
 {
     public Database data;
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
 
     public Camera cam;
     public EventSystem es;
-    public int trig;
+    int trig;
     public int currentID;
     public ItemInventory currentItem;
     public RectTransform movingObject;
@@ -28,10 +28,9 @@ public class Inventory : MonoBehaviour
         if (items.Count == 0) {
             AddGraphics();
         }
-        /*for (int i = 0; i < maxCount; i++) { //тест, рандомное заполнение
-            int x = Random.Range(0, data.items.Count);
-            AddItem(i, data.items[x], Random.Range(1, data.items[x].stuck));
-        }*/
+        for (int i = 0; i < maxCount; i++) { //тест, рандомное заполнение
+            AddItem(i, data.items[0], 1);
+        }
         UpdateInventory();
     }
 
@@ -40,13 +39,17 @@ public class Inventory : MonoBehaviour
             MoveObject();
         }
         trig = GameObject.Find("helper").GetComponent<mouse_follow>().flag;
-        for (int i = 0; i < maxCount; i++) {
+        if (trig == 2 && Input.GetMouseButtonDown(1)) {
+            SearchForSameItem(data.items[trig], 1);
+        }
+        /*for (int i = 0; i < maxCount; i++) {
             if (items[i].id == 0) {
                 if (trig == 2 && Input.GetMouseButtonDown(1)) {
-                    AddItem(trig, data.items[trig], 1);
+                    AddItem(i, data.items[trig], 1);
+                    i = maxCount;
                 }
             }
-        }
+        }*/
         UpdateInventory();
         /*if (Input.GetKeyDown(KeyCode.I)) {
             backGrownd.SetActive(!backGrownd.activeSelf);
