@@ -394,9 +394,6 @@
     <Reference Include="WindowsInput">
       <HintPath>C:/Users/Sirius/Desktop/CITADEL/CITADEL/Assets/scripts/consoleScripts/WindowsInput.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsInput">
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Assets/scripts/consoleScripts/WindowsInput.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Sirius/Desktop/CITADEL/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -404,11 +401,7 @@
       <HintPath>C:/Users/Sirius/Desktop/CITADEL/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-<<<<<<< HEAD
       <HintPath>C:/Users/Sirius/Desktop/CITADEL/CITADEL/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-=======
-      <HintPath>C:/Users/Евгения/UnityProjects/citadel/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
->>>>>>> 1b57760d7877d9880fea6caeb11071349d5b85bd
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
