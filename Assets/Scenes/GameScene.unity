@@ -2012,6 +2012,7 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420036}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420037}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2191,6 +2192,33 @@ MonoBehaviour:
     stuck: 0
   movingObject: {fileID: 1038465452}
   offset: {x: 1, y: -1, z: 0}
+--- !u!114 &519420037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f3e33b0a4bb61b4190585401ed019f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 519420035}
+  items: []
+  gameObjShow: {fileID: 0}
+  InventoryMainObject: {fileID: 0}
+  maxCount: 0
+  cam: {fileID: 0}
+  es: {fileID: 0}
+  currentID: 0
+  currentItem:
+    id: 0
+    itemGameObj: {fileID: 0}
+    count: 0
+    stuck: 0
+  movingObject: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &536149012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,7 +4529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09255e9b5f12e784ea9cea3b54443c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0
+  offset: 0.8
 --- !u!61 &1259156564
 BoxCollider2D:
   m_ObjectHideFlags: 0
